@@ -1,0 +1,39 @@
+.navigation {
+    background-color: rgba(0,0,0,.2);
+    width: 100%;
+    position: fixed;
+    display: inline-block;
+    z-index: 1000;
+
+    &__list {
+        list-style: none;
+        text-align: center;
+    }
+
+    &__item {
+        display: inline-block;
+        font-family: $font-primary;
+        font-size: 1.8rem;
+        letter-spacing: .1rem;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 1rem 2.5rem;
+            cursor: pointer;
+            transition: all ease 0.5s;
+        }
+
+        &:hover,
+        &:active {
+            background-color: rgba(0,0,0,.5);
+            border-radius: 2rem;
+            padding: .8rem 2.1rem;
+        }
+
+    }
+}

@@ -1,0 +1,41 @@
+.restaurant {
+    grid-column: full-start / full-end;
+
+    display: grid;
+    grid-template-rows: repeat(auto-fit, min-content);
+
+    &__content {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        margin: 4rem 6rem;
+    }
+
+    &__text {
+        font-size: 1.8rem;
+        text-align: center;
+        padding: 0 4rem 4rem 4rem;
+    }
+
+    &__buttons {
+        @media only screen and (max-width: $bp-small) {
+            text-align: center;
+        }
+        &--1 {
+            margin-right: 2rem;
+
+            @media only screen and (max-width: $bp-small) {
+                margin-bottom: 3rem;
+                margin-right: 0;
+            }
+        }
+
+        &--2 {
+            margin-left: 2rem;
+
+            @media only screen and (max-width: $bp-small) {
+                margin-left: 0;
+            }
+        }
+    }
+}
