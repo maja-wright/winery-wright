@@ -2,7 +2,7 @@
     display: grid;
     align-self: center;
     justify-self: center;
-    width: 70%;
+    min-width: 80%;
     position: relative;
     height: 53rem;
 
@@ -191,7 +191,7 @@
     } 
     
     @media only screen and (max-width: $bp-small) {
-        width: 70%;
+        width: 85%;
     }
 }
 }
