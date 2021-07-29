@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/icon-grape.png">
+    <link href="font-awesome/css/all.css" rel="stylesheet">
+    <title>Winery Wright</title>
+</head>
+<body>
+    <nav class="navigation">
+        <ul class="navigation__list">
+           <li class="navigation__item"><a href="index.html" class="navigation__link">Winery</a></li>
+           <li class="navigation__item"><a href="about.html" class="navigation__link">Story</a></li>
+           <li class="navigation__item"><a href="booking.html" class="navigation__link">Wedding</a></li>
+           <li class="navigation__item"><a href="booking.html" class="navigation__link">Tours</a></li>
+           <li class="navigation__item"><a href="restaurant-menu.html" class="navigation__link">Restaurant</a></li>
+           <li class="navigation__item"><a href="#contact" class="navigation__link">Contact Us</a></li>
+       </ul>
+   </nav>
+
+   <section class="restaurant-reservation">
+        <h1 class="heading-primary">Reservations</h1>
+        <form class="restaurant-reservation__form" action="#" >
+            <div class="date-picker">
+                <div class="selected-date"></div>
+                <div class="dates">
+                    <div class="month">
+                        <div class="arrows prev-mth">&lt;</div>
+                        <div class="mth"></div>
+                        <div class="arrows next-mth">&gt;</div>
+                    </div>
+                    <div class="days"></div>
+                </div>
+            </div>
+            <div class="informations">
+                <div class="informations__item">
+                    <label for="name"> Full name </label>
+                    <input type="text" id="name" name="name" autocomplete="off" required>
+                </div>
+                <div class="informations__item">
+                    <label for="email"> Email </label>
+                    <input type="email" id="email" name="email" autocomplete="off" required>
+                </div>
+                <div class="informations__item">
+                    <label for="mobile"> Mobile No. </label>
+                    <input type="text" id="mobile" name="mobile" autocomplete="off" required>
+                </div>
+                <div class="informations__item">
+                    <label for="guests"> No. of Guests </label>
+                    <input type="number" id="guests" name="guests" required>
+                </div>
+                <div class="informations__item">
+                    <label for="time"> Preferred Time </label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+            </div>
+            <div class="button">
+                <button class="btn btn--white btn--animated">Submit</button>
+            </div>
+        </form>
+   </section>
+
+   <section class="restaurant-menu">
+       <div class="restaurant-menu__heading">
+           <h1 class="heading-secondary">Restaurant Menu</h1>
+           <p class="restaurant-menu__heading--text">Some of our most enjoyable food experiences are when everyone’s in the kitchen, talking, helping, laughing, and having a glass of wine.</p>
+           <p class="restaurant-menu__heading--text">We would like to suggest the following wines to pair with your salads: If you prefer dry wine, try the Chardonnay.  If you prefer a little sweeter wine, try our Ros&#233;.</p>
+       </div>
+       <div class="restaurant-menu__content">
+            <h1 class="heading-secondary">Starters</h1>
+            <h2>Deep-Fried Artichoke Hearts</h2>
+            <p>Panko crusted artichoke quarters, deep-fried and served with a citrus aioli.</p>
+            <p>$8.95</p>
+            <h2>Baby Portobello Mushroom Bruschetta</h2>
+            <p>Grilled garlic baguette slices with sautéed baby Portobello mushrooms, basil pesto, Montage wine, topped with melted Parmesan cheese.</p>
+            <p>$8.95</p>
+            <h2>Sweet Potato Fries</h2>
+            <p>Deep fried sweet potatoes with our own dipping sauce.</p>
+            <p>$6.95</p>
+            <h1 class="heading-secondary">Entr&#233;e Salads</h1>
+            <h2>Great Caesar</h2>
+            <p>Crispy romaine lettuce, homemade croutons, fresh Parmesan cheese and our Caesar dressing, garnished with cherry tomatoes.</p>
+            <p>$12.95 Add chicken or shrimp - $16.95, Salmon - $18.95</p>
+            <h2>Cashew Crusted Salmon Salad</h2>
+            <p>Fresh Atlantic salmon crusted with cashews, oven roasted and served on mesclun with dried cranberries, almonds, feta cheese tossed with citrus vinaigrette.</p>
+            <p>$18.95</p>
+            <h2>Chicken Salad</h2>
+            <p>Grilled chicken breast served on fresh mesclun mix with spicy crusted pecans, juicy red seedless grapes (close friends of Cabernet Sauvignon) and our citrus vinaigrette, topped with Gorgonzola.</p>
+            <p>$15.95</p>
+            <h1 class="heading-secondary">Entr&#233;e</h1>
+            <h2>Duet of Raviolis</h2>
+            <p>Savory combination of sundried tomato-ricotta cheese and pesto raviolis topped with a tomato and Montage wine sauce, garnished with toasted pine nuts and Parmesan cheese.</p>
+            <p>$14.95</p>
+            <h2>Classic Shrimp Scampi</h2>
+            <p>Succulent shrimp, sautéed with garlic, butter, Montage, and fresh lemon juice, served on linguine garnised with Parmesan cheese and chopped parsley.</p>
+            <p>$18.95</p>
+            <h1 class="heading-secondary">Sandwiches and Burgers</h1>
+            <h2>Grilled Chicken Sandwich</h2>
+            <p>Tender chicken breast, melted Swiss cheese, lettuce, tomato, red onion, chili mayo on a fresh Challah bun.</p>
+            <p>$13.95</p>
+            <h2>Turkey and Swiss Croissant</h2>
+            <p>Thinly sliced breast of turkey, Swiss cheese, lettuce, tomato, red onion, and mayo on a buttery croissant.</p>
+            <p>$14.95</p>
+       </div>
+   </section>
+
+   <footer class="footer" id="contact">
+
+        <div class="footer__logo">
+        <ul class="footer__logo--items">
+            <li class="footer__logo--item"><a href="#" class="footer__logo--link"><i class="far fa-envelope fa-3x"></i></a></li>
+            <li class="footer__logo--item"><a href="#" class="footer__logo--link"><i class="fab fa-instagram fa-3x"></i></a></li>
+            <li class="footer__logo--item"><a href="#" class="footer__logo--link"><i class="fab fa-facebook-square fa-3x"></i></a></li>
+            <li class="footer__logo--item"><a href="#" class="footer__logo--link"><i class="fab fa-pinterest fa-3x"></i></a></li>
+            <li class="footer__logo--item"><a href="#" class="footer__logo--link"><i class="fab fa-tripadvisor fa-3x"></i></a></li>
+        </ul>
+        </div>
+
+        <div class="footer__hours">
+            <h1 class="footer__hours--heading">HOURS</h1>
+            <ul class="footer__hours--text">
+                <li>Mon - Fri</li>
+                <li>10am - 6pm</li>
+                <li>Sat - Sun</li>
+                <li>8am - 8pm</li>
+            </ul>
+        </div>
+        <div class="footer__copyright">
+            <p>&copy; 
+                <span id="copyright">
+                <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+            </span> Winery Wright. Site by Maja Wright.</p>
+        </div>
+    </footer>  
+    <script src="script.js"></script>
+</body>
+</html>

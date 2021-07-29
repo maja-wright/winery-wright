@@ -1,0 +1,31 @@
+.popular-tours {
+    grid-column: full-start / full-end;
+    margin: 0 4rem;
+    padding: 4rem 1rem;
+
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+
+    @media only screen and (max-width: $bp-medium) {
+        margin: 0;
+        padding: 1rem 0;
+    }
+
+    &__title {
+        background-color: #fff;
+        text-align: center;
+    }
+
+    &__cards {
+        padding: 3rem 0;
+        background-color: $color-primary;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+
+    @media only screen and (max-width: $bp-medium) {
+                margin: 0;
+                padding: 1rem 0;
+                grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+            }
+    }
+}

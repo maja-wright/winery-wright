@@ -1,0 +1,36 @@
+.video {
+    grid-column: full-start / full-end;
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+    &__text {
+        text-align: center;
+    }
+
+    &__btn {
+        width: 40%;
+
+        @media only screen and (max-width: $bp-small) {
+            width: 80%;
+        }
+    }
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    // opacity: .03;
+    overflow: hidden;
+
+    &__content {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}

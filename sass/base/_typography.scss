@@ -1,0 +1,50 @@
+.heading-primary {
+    color: #fff;
+    backface-visibility: hidden;
+    font-size: 7rem;
+    font-family: $font-secondary;
+    margin-bottom: 4rem;
+    font-weight: 400;
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 5rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 4rem;
+    }
+
+    &--item-1 {
+        display: block;
+        letter-spacing: 1.75rem;
+        animation: moveInRight 1s ease-out;
+
+        @media only screen and (max-width: $bp-small) {
+            margin-left: 3rem;
+        }
+    }
+
+    &--item-2 {
+        display: block;
+        letter-spacing: 1.5rem;
+    
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+
+        @media only screen and (max-width: $bp-small) {
+            margin-left: 3rem;
+        }
+    }
+}
+
+.heading-secondary {
+    margin-bottom: 3rem;
+    font-size: 5rem;
+    font-family: $font-secondary;
+    color: $color-primary;
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 4rem;
+    }
+}

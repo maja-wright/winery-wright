@@ -1,0 +1,22 @@
+.header {
+    height: 100vh;
+    background-color: #fff;
+    grid-column: 1 / -1;
+    background-image: url(../img/wine-dining.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__text-box {
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        @media only screen and (max-width: $bp-smallest) {
+            top: 82%;
+            left: 50%;
+            padding-bottom: 4rem;
+        }
+    }
+}

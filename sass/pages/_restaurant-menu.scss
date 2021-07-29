@@ -1,0 +1,92 @@
+.restaurant-reservation {
+    height: 100vh;
+    padding: 10rem 3rem 1rem 3rem;
+    background-image: linear-gradient(
+            to right bottom, 
+            rgba($color-primary-light, 0.5),
+            rgba($color-primary-dark, 0.5)), 
+            url(../img/restaurant-menu-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, max-content);
+    align-items: center;
+    justify-items: center;
+
+    @media only screen and (max-width: $bp-medium) {
+        height: auto;
+    }
+
+    &__form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr min-content;
+        }
+    }
+}
+
+.informations {
+    height: 295px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    justify-self: start;
+    padding: 3rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        height: 100%;
+        width: 75%;
+        justify-self: center;
+        order: 1;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        width: 90%;
+    }
+
+    &__item {
+        font-size: 1.5rem;
+        padding: 0.6rem;
+        border-bottom: 1px solid $color-primary-dark;
+    }
+}
+
+.button {
+    padding: 1.5rem 0;
+    text-align: end;
+    grid-column: 1 / -1;
+    order: 3;
+
+    @media only screen and (max-width: $bp-medium) {
+        text-align: center;
+        padding: 10rem 2rem 3rem 2rem;
+    }
+}
+
+.restaurant-menu {
+    text-align: center;
+    margin: 2rem;
+
+    &__heading {
+        padding: 4rem 4rem 2rem 4rem;
+        
+        &--text {
+            font-family: $font-secondary;
+            font-size: 2.5rem;
+            color: $color-primary-dark;
+        }
+    }
+
+    &__content {
+        padding: 2rem;
+        color: $color-primary-dark;
+        font-size: 1.5rem;
+    }
+}

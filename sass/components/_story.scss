@@ -1,0 +1,39 @@
+.story {
+    grid-column: full-start / full-end;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    margin: 3rem 2rem;
+
+    &__about {
+        display: grid;
+        align-content: center;
+        justify-items: center;
+    }
+
+    &__text {
+        font-size: 1.5rem;
+        margin-bottom: 4rem;
+        text-align: center;
+    }
+
+    &__photo {
+        background-color: #fff;
+
+        display: grid;
+
+        &--1 {
+            max-width: 40%;
+            display: block;
+            justify-self: center;
+            align-self: center;
+            border-radius: 7%;
+
+            @media only screen and (max-width: $bp-medium) {
+                margin-top: 2rem;
+                max-width: 60%;
+            }
+        }
+    }
+
+}

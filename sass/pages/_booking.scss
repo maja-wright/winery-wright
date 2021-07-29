@@ -1,0 +1,96 @@
+.booking {
+    height: 100vh;
+    background-image: linear-gradient(
+        to right bottom, 
+        rgba($color-primary-light, 0.5),
+        rgba($color-primary-dark, 0.5)), 
+        url(../img/sunset.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+
+    display: grid;
+    grid-template-rows: minmax(60%, max-content);
+    grid-template-columns: minmax(60%, max-content);
+    align-content: center;
+    justify-content: center;
+
+    @media only screen and (max-width: $bp-small) {
+        height: auto;
+    }
+
+    &__form {
+        background-color: rgba(223, 214, 141, .8);
+        padding: 2rem;
+        margin: 5rem 3rem;
+        border: 2mm double #fff;
+
+        display: grid;
+        grid-template-rows: repeat(3, max-content);
+        grid-template-columns: minmax(1fr, max-content);
+        align-items: center;
+        justify-items: center;
+
+        @media only screen and (max-width: $bp-small) {
+            padding: 6rem 1rem 1rem 1rem;
+            margin: 1rem;
+        }
+
+        &--title {
+            font-family: $font-secondary;
+            font-size: 6rem;
+            color: #fff;
+            padding: 1rem;
+        }
+
+        &--tours {
+            text-align: center;
+
+            li {
+            display: inline-block;
+            padding: 1.5rem;
+            font-size: 3rem;
+            font-family: $font-secondary;
+            font-weight: 600;
+
+            @media only screen and (max-width: $bp-small) {
+                font-size: 2rem;
+            }
+            }
+        }
+
+        &--item {
+            padding: 2rem;
+            font-size: 2rem;
+            font-weight: 700;
+            font-family: $font-primary;
+            border-bottom: 2px solid $color-primary-dark;
+
+            @media only screen and (max-width: $bp-small) {
+                padding: 1rem;
+                font-size: 1.5rem;
+            }
+        }
+
+        &--button {
+            padding: 2rem;
+            text-align: center;
+        }
+    }
+}
+
+input[type=text], input[type=email] {
+    appearance: none;
+    outline: none;
+    width: 35rem;
+    padding-left: 2rem;
+    background-color: inherit;
+    border-style: hidden;
+    font-size: 2rem;
+    font-family: $font-primary;
+    color: $color-primary-dark;
+
+    @media only screen and (max-width: $bp-small) {
+        width: 10rem;
+    }
+}
